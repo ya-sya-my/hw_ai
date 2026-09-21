@@ -1,0 +1,21 @@
+{
+  "name": "mock-api-server",
+  "version": "1.0.0",
+  "description": "Simple local mock API server based on OpenAPI specification",
+  "main": "index.js",
+  "scripts": {
+    "start": "prism mock openapi.yaml -h 127.0.0.1 -p 3000",
+    "dev": "prism mock openapi.yaml -h 127.0.0.1 -p 3000 --dynamic"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "openapi",
+    "swagger"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@stoplight/prism-cli": "^5.3.0"
+  }
+}
